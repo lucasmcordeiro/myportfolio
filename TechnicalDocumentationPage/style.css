@@ -1,0 +1,144 @@
+
+body {
+    background: #FFFFFF;
+    width: 99%;
+}
+
+#main-doc {
+    order: 2;
+    margin-left: 330px;
+    top: 0px;
+    position: absolute;
+
+}
+
+
+
+.main-section p {
+    padding: 20px 20px 0px 20px;
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+.main-section code {
+    margin: 15px 50px 15px 60px;
+    background-color: #F7F7F7;
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    display: block;
+    white-space: pre-wrap;
+    word-break: normal;
+    word-wrap: normal;
+    padding-left: 20px;
+    text-align: left;
+    
+
+}
+
+
+.main-section ul {
+    padding-left: 60px;
+    padding-right: 20px;
+    text-align: justify;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+.main-section ul li {
+    padding: 15px 0px;
+    font-size: 14px;
+} 
+
+.main-section header {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+#navbar {
+    order: 1;
+    width: 300px;
+    border-right: 3px solid black;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+#navbar header {
+    order: 1;
+    font-size: 26px;
+    font-weight: 600;
+    align-self: center;
+
+
+}
+
+#navbar ul {
+    align-self: flex-start;
+    order: 2;
+    width: 100%;
+    padding-left: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#navbar ul li a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+@media (max-width:1050px) {
+    
+    body {
+        flex-direction: column;
+        width: 99%;
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        width: 100%;
+        order: 1;
+        z-index: 1;
+        position: absolute;
+    }
+
+    #navbar  ul {
+        height: 200px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+
+    #navbar ul li a {
+        align-self: center;
+    }
+
+    #main-doc {
+        left: 0;
+        order: 2;
+        margin: 280px 20px 0px 20px;
+        width: 90%;
+    
+    }
+}

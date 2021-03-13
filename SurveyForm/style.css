@@ -1,0 +1,313 @@
+@media (max-width: 800px){
+    
+    #title h1 
+    {
+        font-size: 42px;
+    }
+    #title p{
+        font-size: 18px;
+        font-style: italic;;
+    }
+}
+
+body {
+    background-image: url("https://www.ellucian.com/sites/default/files/styles/max_width_1920/public/uploads/images/2018/09/insights-article-meeting-students-expectations-for-a-digital-campus.jpg?itok=objiC9GM");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 200px 1fr 40px;
+    grid-template-columns: 1fr 700px 1fr;
+    grid-template-areas: "title title title" ". form ." "footer footer footer";
+    
+    justify-items: center;
+    margin: -8px;
+    padding: 0px;
+    background-color: rgba(9, 3, 91, 0.6);
+    height: 100%px;
+}
+
+#title {
+    grid-area: title;
+    color:white;
+    text-align: center;
+    text-justify: center;
+    align-self: center;
+    justify-self: center;
+}
+#title h1{
+    font-size: 52px;
+}
+#title p{
+    font-size: 22px;
+    font-style: italic;;
+}
+
+#survey-form {
+    width: 100%;
+    grid-area: form;
+    background-color:  rgba(5, 2, 59, 0.8);
+    border-radius: 1%;
+    padding: 20px;
+    margin: 8px;
+    
+
+}
+
+#survey-form label{
+    font-size: 22px;
+    color: white;
+    margin: 10px 0px;
+    display: inline-block;
+    font-weight: 600;
+
+    
+}
+
+#survey-form input{
+    width: 100%;
+    border: 1px solid  rgba(25,171, 91, 0.9);
+    border-radius: 4px;
+    height: 40px;
+}
+
+#survey-form input:focus{
+ 
+    border: 2px solid  rgba(2, 204, 93, 0.9);
+    height: 38px;
+}
+
+
+#id-name input[type="email"] {
+    padding-left: 40px;
+
+}
+
+#survey-form input {
+    padding-left: 10px;    
+}
+#email {
+
+}
+#number {
+
+}
+
+#dropdown, #dropdown2 {
+    width: 100%;
+    border: 1px solid  rgba(25,171, 91, 0.9);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 10px;
+}
+#id-radio {
+    font-size:12px;
+
+}
+#id-radio label{
+    font-size:12px;
+    
+
+}
+
+#id-radio input{
+    border: 2px solid  rgba(25,171, 91, 0.9);
+    width: 10px;
+    border-radius: 4px;
+    height: 10px;
+    
+}
+
+#id-radio h2{
+    font-size:22px;
+    color: white;
+
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #00a69c;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#id-check input{
+    border: 2px solid  rgba(25,171, 91, 0.9);
+    width: 10px;
+    border-radius: 4px;
+    height: 10px;
+    
+}
+
+#id-check h2{
+    font-size:22px;
+    color: white;
+
+}
+
+#id-check {
+    font-size:12px;
+
+}
+#id-check label{
+    font-size:12px;
+    
+
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background: #00a69c;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+#comments textarea{
+    width: 100%;
+    border: 1px solid  rgba(25,171, 91, 0.9);
+    border-radius: 4px;
+    height: 80px;
+    padding: 10px 10px;
+}
+#submit{
+    margin: 50px 10px 50px 10px;
+    padding: -10px auto 0px auto;
+    width:120px;
+    height: 40px;
+    background:  rgba(25,171, 91, 0.9);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+    box-shadow: 1px 1px;
+}
+
+#submit:hover {
+    background:  rgba(25, 159, 171, 0.9)
+}
+
+#submit:active{
+    box-shadow: 0px 0px;
+    background:  rgba(25,171, 91, 0.9);
+}
+
+footer { 
+    grid-area: footer;
+    text-align: center;
+    text-justify: center;
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Fira Sans';
+    
+}
+
+footer a {
+    color:#fff;
+    text-decoration: none;
+   
+
+}
