@@ -137,6 +137,7 @@ document.querySelector('.nav').addEventListener('click', function(e) {
       if(e.target.classList.contains('nav__link')){
         document.querySelector(e.target.getAttribute('href')).scrollIntoView({behavior: 'smooth'})
       }
+     console.log("tentei")
     })  
 
 
